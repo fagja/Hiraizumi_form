@@ -31,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <form action="" method="POST">
-        <section class='personal infos'>
+    <form name="sampleform" action="" method="POST">
+        <section class='personalInfos'>
             <div class='sex'>
                 <fieldset>
                     <legend>性別</legend>
@@ -48,6 +48,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div>
                         <input type="radio" id="sexChoice3" name="sex" value="その他">
                         <label for="sexChoice3">その他</label>
+                    </div>
+                    <div>
+                    <input type="button" value="選択解除" onclick="resetRadio()">
+                    <script>function resetRadio() {
+                            document.sampleform.reset();
+                            }</script>
                     </div>
                 </fieldset>
             </div>

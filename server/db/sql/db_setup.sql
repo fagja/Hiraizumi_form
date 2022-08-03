@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS personalInfos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    sex VARCHAR(50),
+    age VARCHAR(50) NOT NULL,
+    place VARCHAR(50) NOT NULL,
+    job VARCHAR(50) NOT NULL,
+);
