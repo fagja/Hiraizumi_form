@@ -9,6 +9,9 @@ $dbh = connect_db();
 
 // 変数を用意
 $msgs = [];
+$q1s = [];
+$q2s = [];
+$q3 = '';
 
 // methodがPOSTだったら変数に値をセットする
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -16,6 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $msgs[] = $_POST['age'];
     $msgs[] = $_POST['place'];
     $msgs[] = $_POST['job'];
+    $q1s = $_POST['Q1'];
+    $q2s = $_POST['Q2'];
+    $q3 = $_POST['Q3'];
 }
 
 ?>
@@ -51,6 +57,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class="choice">
                                 <input class="radio" type="radio" id="sexChoice3" name="sex" value="その他">
                                 <label class="label" for="sexChoice3">その他</label>
+                            </div>
+                            <div>
+                                <input class="uncheckedButton" type="button" value="選択解除" onclick="uncheckedRadio_sex()">
                             </div>
                         </div>
                     </div>
@@ -245,20 +254,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="buttons">
-                <div>
-                    <input type="submit" value="送信">
+                <div class="buttons">
+                    <div>
+                        <input type="submit" value="送信">
+                    </div>
                 </div>
-                <div>
-                    <input type="button" value="選択解除" onclick="resetRadio()">
-                    <script>
-                        function resetRadio() {
-                            document.sampleform.reset();
-                        }
-                    </script>
-                </div>
-            </div>
         </main>
         <footer></footer>
     </form>
@@ -266,6 +266,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php foreach ($msgs as $msg) : ?>
         <p><?= $msg ?></p>
     <?php endforeach; ?>
+    <?php foreach ($q1s as $q1) : ?>
+        <?= $q1 ?>
+    <?php endforeach; ?>
+    <?= '<br>' ?>
+    <?php foreach ($q2s as $q2) : ?>
+        <?= $q2 ?>
+    <?php endforeach; ?>
+    <?= '<br>' ?>
+    <?= $q3 ?>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

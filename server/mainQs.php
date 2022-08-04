@@ -24,12 +24,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qs</title>
 </head>
+
 <body>
     <form name="Qsform" action="" method="POST">
         <section class='Qs'>
@@ -38,40 +40,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <legend>Q1</legend>
 
                     <div>
-                    <input type="checkbox" id="Q1Choice1" name="Q1[]" value="1">
-                    <label for="Q1Choice1">市からの情報（市ホームページ、市政だより、市公式SNSなど）</label>
+                        <input type="checkbox" id="Q1Choice1" name="Q1[]" value="1">
+                        <label for="Q1Choice1">市からの情報（市ホームページ、市政だより、市公式SNSなど）</label>
                     </div>
 
                     <div>
-                    <input type="checkbox" id="Q1Choice2" name="Q1[]" value="2">
-                    <label for="Q1Choice2">国からの情報（厚生労働省ホームページなど）</label>
+                        <input type="checkbox" id="Q1Choice2" name="Q1[]" value="2">
+                        <label for="Q1Choice2">国からの情報（厚生労働省ホームページなど）</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q1Choice3" name="Q1[]" value="3">
-                    <label for="Q1Choice3">県からの情報（県ホームページ、ちば県民だよりなど）</label>
+                        <input type="checkbox" id="Q1Choice3" name="Q1[]" value="3">
+                        <label for="Q1Choice3">県からの情報（県ホームページ、ちば県民だよりなど）</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q1Choice4" name="Q1[]" value="4">
-                    <label for="Q1Choice4">医療機関からの情報（かかりつけへの受診時など）</label>
+                        <input type="checkbox" id="Q1Choice4" name="Q1[]" value="4">
+                        <label for="Q1Choice4">医療機関からの情報（かかりつけへの受診時など）</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q1Choice5" name="Q1[]" value="5">
-                    <label for="Q1Choice5">マスコミからの情報（テレビ、新聞など）</label>
+                        <input type="checkbox" id="Q1Choice5" name="Q1[]" value="5">
+                        <label for="Q1Choice5">マスコミからの情報（テレビ、新聞など）</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q1Choice6" name="Q1[]" value="6">
-                    <label for="Q1Choice6">インターネットからの情報（Twitter、Facebook、Youtubeなど）</label>
+                        <input type="checkbox" id="Q1Choice6" name="Q1[]" value="6">
+                        <label for="Q1Choice6">インターネットからの情報（Twitter、Facebook、Youtubeなど）</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q1Choice7" name="Q1[]" value="7">
-                    <label for="Q1Choice7">家族・友人・知人からの情報</label>
+                        <input type="checkbox" id="Q1Choice7" name="Q1[]" value="7">
+                        <label for="Q1Choice7">家族・友人・知人からの情報</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q1Choice8" name="Q1[]" value="8">
-                    <label for="Q1Choice8">その他（）※50字以内</label>
+                        <input type="checkbox" id="Q1Choice8" name="Q1[]" value="8">
+                        <label for="Q1Choice8">その他（）※50字以内</label>
                     </div>
                     <div>
-                    <input type="text" disabled>
+                        <input type="text" disabled>
                     </div>
                 </fieldset>
             </div>
@@ -80,29 +82,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <legend>Q2</legend>
 
                     <div>
-                    <input type="checkbox" id="Q2Choice1" name="Q2[]" value="1">
-                    <label for="Q2Choice1">市ホームページ</label>
+                        <input type="checkbox" id="Q2Choice1" name="Q2[]" value="1">
+                        <label for="Q2Choice1">市ホームページ</label>
                     </div>
 
                     <div>
-                    <input type="checkbox" id="Q2Choice2" name="Q2[]" value="2">
-                    <label for="Q2Choice2">市政だより</label>
+                        <input type="checkbox" id="Q2Choice2" name="Q2[]" value="2">
+                        <label for="Q2Choice2">市政だより</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q2Choice3" name="Q2[]" value="3">
-                    <label for="Q2Choice3">市公式SNS（Twitter、LINE、Facebook）</label>
+                        <input type="checkbox" id="Q2Choice3" name="Q2[]" value="3">
+                        <label for="Q2Choice3">市公式SNS（Twitter、LINE、Facebook）</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q2Choice4" name="Q2[]" value="4">
-                    <label for="Q2Choice4">ちばし安全・安心メール</label>
+                        <input type="checkbox" id="Q2Choice4" name="Q2[]" value="4">
+                        <label for="Q2Choice4">ちばし安全・安心メール</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q2Choice5" name="Q2[]" value="5">
-                    <label for="Q2Choice5">コロナワクチンナビ</label>
+                        <input type="checkbox" id="Q2Choice5" name="Q2[]" value="5">
+                        <label for="Q2Choice5">コロナワクチンナビ</label>
                     </div>
                     <div>
-                    <input type="checkbox" id="Q2Choice6" name="Q2[]" value="6">
-                    <label for="Q2Choice6">1つもない</label>
+                        <input type="checkbox" id="Q2Choice6" name="Q2[]" value="6">
+                        <label for="Q2Choice6">1つもない</label>
                     </div>
                 </fieldset>
             </div>
@@ -144,4 +146,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?= '<br>' ?>
     <?= $q3 ?>
 </body>
+
 </html>
